@@ -62,3 +62,22 @@ body{
     border-color: var(--soft-magenta);
     color: var(--soft-magenta);
 }
+
+@media screen and (max-width: 768px) {
+    .huddle{
+        flex-direction: column;
+    }
+    .huddle__right{
+        margin-top: 50px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .huddle__right button{
+        display: block;
+        margin: auto;
+    }
+    .social{
+        justify-content: center;
+        margin-right: 0;
+    }
+}
