@@ -1,0 +1,64 @@
+:root{
+    --violet-color: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --white-color: #fff;
+}
+body{
+    background: url('/images/bg-desktop.svg') top center no-repeat;
+    background-size: contain;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--violet-color);
+}
+.huddle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 30px;
+}
+.huddle__right{
+    color: var(--white-color);
+    margin-left: 50px;
+}
+.huddle__right button{
+    min-width: 200px;
+    padding: 16px 30px;
+    border-radius: 30px;
+    border: none;
+    color: var(--violet-color);
+    background-color: var(--white-color);
+    font-size: 1.0rem;
+    font-weight: 400;
+    margin-top: 12px;
+}
+.huddle__right button:active,
+.huddle__right button:hover{
+    cursor: pointer;
+    background-color: var(--soft-magenta);
+    color: var(--white-color);
+    box-shadow: 5px 5px 10px #333;
+    transition: all;
+}
+.social{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+}
+.social__item{
+    margin: auto 8px;
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social__item:active,
+.social__item:hover{
+    cursor: pointer;
+    border-color: var(--soft-magenta);
+    color: var(--soft-magenta);
+}
